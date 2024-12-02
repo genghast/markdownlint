@@ -1,6 +1,7 @@
 // @ts-check
 
-export { default as markdownlint } from "../lib/markdownlint.mjs";
+export { getVersion } from "markdownlint";
+export { applyFixes, lint as lintSync } from "markdownlint/sync";
 export { compile, parse, postprocess, preprocess } from "micromark";
 export { directive, directiveHtml } from "micromark-extension-directive";
 export { gfmAutolinkLiteral, gfmAutolinkLiteralHtml } from "micromark-extension-gfm-autolink-literal";
